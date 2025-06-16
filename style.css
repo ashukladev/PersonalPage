@@ -1,0 +1,146 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #cfcfcf;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem 2rem;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #c0c0c0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icons a img {
+  width: 20px;
+  margin-left: 1rem;
+  opacity: 0.8;
+}
+
+.social-icons a:hover img {
+  opacity: 1;
+}
+
+/* Main Section */
+.main-section {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+  align-items: center; /* Add this line */
+}
+
+.intro-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem; /* small gap to h3 */
+  color: #e0e0e0;
+}
+
+.job-details {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem; /* more space before paragraph */
+  color: #bbbbbb;
+}
+
+.overview {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+  max-width: 700px;
+}
+
+
+.text-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  color: #d3d3d3;
+  margin-bottom: 1rem;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 250px;
+  height: 300px;
+  border: 2px solid #888;          /* optional: silver border */
+  border-radius: 12px;             /* smooth rounded edges */
+  overflow: hidden;                /* CLIPS the image */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);  /* subtle shadow */
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;               /* ensures image fills frame nicely */
+  display: block;
+}
+
+/* Footer */
+.footer-bar {
+  padding: 1rem 0;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.95rem;
+}

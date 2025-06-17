@@ -70,7 +70,7 @@ a:hover {
 .main-section {
   display: flex;
   flex: 1;
-  gap: 2rem;
+  gap: 1rem;
   margin: 3rem 0;
   flex-wrap: wrap;
   align-items: center; /* Add this line */
@@ -104,6 +104,11 @@ a:hover {
 .text-content {
   flex: 1;
   padding: 1rem;
+  text-align: right;     
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
 }
 
 .text-content h1 {
@@ -121,7 +126,7 @@ a:hover {
 
 .image-placeholder {
   width: 250px;
-  height: 300px;
+  height: 350px;
   border: 2px solid #888;          /* optional: silver border */
   border-radius: 12px;             /* smooth rounded edges */
   overflow: hidden;                /* CLIPS the image */

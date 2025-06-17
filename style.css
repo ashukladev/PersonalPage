@@ -117,7 +117,6 @@ p{
   max-width: 700px;
 }
 
-
 .text-content {
   flex: 1;
   padding: 1rem;
@@ -125,7 +124,6 @@ p{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
 }
 
 .text-content h1 {

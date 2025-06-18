@@ -99,6 +99,9 @@ p{
   font-weight: 600;
   margin-bottom: 0.4rem; /* small gap to h3 */
   color: #e0e0e0;
+  text-align: left;
+  margin-left: 0;
+
 }
 
 .job-details {
@@ -111,7 +114,7 @@ p{
 
 .overview {
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 1rem; padding-left: 0;
   line-height: 1.6;
   color: #cccccc;
   max-width: 700px;
@@ -123,7 +126,13 @@ p{
   text-align: left;     
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+}
+
+@media (min-width: 760px) {
+  .text-content {
+    margin-left: 20rem;
+  }
 }
 
 .text-content h1 {
